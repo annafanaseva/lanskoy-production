@@ -1,0 +1,31 @@
+.hero {
+  &-wrapper {
+    max-width: 525px;
+  }
+
+  &-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+  }
+
+  &-text {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  &-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 30px;
+    background: linear-gradient(to right, #1C1D21 700px,  #66FCF1 150%);
+  }
+
+  &-img{
+    img{
+      max-height: 460px;
+    }
+  }
+}

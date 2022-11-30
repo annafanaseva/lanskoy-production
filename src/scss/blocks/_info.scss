@@ -1,0 +1,42 @@
+.info {
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  &-text {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  &-text-wrapper {
+    max-width: 600px;
+  }
+
+  &-img {
+    position: relative;
+  }
+
+  &-squere {
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #29C0D0;
+  }
+
+  &-squere-text {
+    color: #fff;
+    font-weight: 700;
+    font-size: 58px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+  }
+}
