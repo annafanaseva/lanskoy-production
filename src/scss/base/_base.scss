@@ -13,6 +13,20 @@ section {
   margin-top: 140px;
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateX(20%);
+  transition: all 1s;
+  overflow-x: hidden;
+}
+
+.show {
+  filter: blur(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .section-wrapper {
   width: 1080px;
   margin: 0 auto;

@@ -26,18 +26,34 @@
   }
 
   &-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
     width: 250px;
     height: 200px;
     box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.25);
     background: #202124;
     background-size: 50%;
-    transition: all .1s ease-in-out;
 
+    &-title {
+      margin: 16px 0;
+      font-weight: 500;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+
+    &-subtitle {
+      text-align: center;
+      max-width: 210px;
+      font-size: 14px;
+      color: #FFFFFF;
+    }
 
     &:hover {
       background-position: 100% 0;
-      transform: scale(1.05);
-      transition: all .1s ease-in-out;
     }
 
     &:nth-child(1) {
@@ -48,7 +64,7 @@
     &:nth-child(2) {
       background-image: linear-gradient(#1C1D21 100px, #66FCF1 200%);
       margin-top: 30px;
-
+      transition-delay: 400ms;
     }
 
     &:nth-child(3) {
@@ -59,6 +75,7 @@
     &:nth-child(4) {
       background-image: #1C1D21;
       margin-top: 30px;
+      transition-delay: 600ms;
     }
   }
 }
