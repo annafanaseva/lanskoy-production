@@ -1,8 +1,9 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const webpack = require('webpack'); 
 const path = require('path');
+
+const pages = ["index", "service"];
 
 module.exports = {
   mode: 'development',
@@ -50,7 +51,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'Lanskoy production',
+      filename: 'index.html',
       template: './src/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Services',
+      filename: 'services.html',
+      template: './src/services.html'
     }),
     new MiniCssExtractPlugin({
       filename: "styles.css"
