@@ -38,11 +38,29 @@
     background: #202124;
     background-size: 50%;
 
+    img {
+      transition: 0.3s;
+    }
+
+    &:hover img {
+      transform: translateY(-8px);
+    }
+
+    &:hover .services-card-title {
+      color: #29C0D0;
+      transform: translateY(-8px);
+    }
+
+    &:hover .services-card-subtitle {
+      transform: translateY(-8px);
+    }
+
     &-title {
       margin: 16px 0;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 18px;
       color: #FFFFFF;
+      transition: 0.3s;
     }
 
     &-subtitle {
@@ -50,11 +68,9 @@
       max-width: 210px;
       font-size: 14px;
       color: #FFFFFF;
+      transition: 0.3s;
     }
 
-    &:hover {
-      background-position: 100% 0;
-    }
 
     &:nth-child(1) {
       background-image: #1C1D21;

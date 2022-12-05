@@ -1,0 +1,91 @@
+@mixin circle($i) {
+  border-radius: 100%;
+  height: $i;
+  width: $i;
+}
+
+.swiper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+
+  &-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 900px;
+
+    &-inner {
+      display: flex;
+      transition: all 1s ease-in-out;
+    }
+
+    &-card {
+      display: block;
+      box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.25);
+      margin: 30px 10px;
+      width: 280px;
+      height: 260px;
+      transition: all 0.4s;
+
+      &:hover {
+        transform: scale(1.03);
+        transition: 0.4s;
+
+        .swiper-wrapper-content p:after {
+          content: "";
+          background: #29C0D0;
+          height: 1px;
+          width: 40px;
+          margin: 12px auto 0;
+          transition: 0.4s;
+          display: block;
+        }
+      }
+
+      img {
+        display: block;
+        width: 90%;
+        margin: 10px auto 0;
+        height: 180px;
+      }
+    }
+
+    &-content {
+      padding: 20px 10px;
+      text-align: center;
+
+      p {
+        font-size: 14px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  &-map {
+    margin-top: 10px;
+
+    button {
+      all: unset;
+      background: lighten(#1C1D21, 10);
+      cursor: pointer;
+      margin: 0 0.125em;
+      position: relative;
+      user-select: none;
+      @include circle(16px);
+
+      &.active {
+        &:after {
+          background: #1C1D21;
+          content: "";
+          left: 50%;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          @include circle(8px);
+        }
+      }
+    }
+  }
+}

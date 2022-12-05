@@ -1,4 +1,6 @@
 .hero {
+  margin-top: 60px;
+
   &-wrapper {
     max-width: 525px;
   }
@@ -20,11 +22,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 60px 30px;
-    background: linear-gradient(to right, #1C1D21 700px,  #66FCF1 120%);
+    background: linear-gradient(to right, #1C1D21 700px, #66FCF1 120%);
   }
 
-  &-img{
-    img{
+  &-img {
+    img {
       max-height: 460px;
     }
   }

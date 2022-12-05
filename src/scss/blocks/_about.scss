@@ -1,0 +1,20 @@
+.about {
+  &-wrapper {
+    position: relative;
+
+    img {
+      max-width: 1080px;
+    }
+
+    &-text {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translate(0, -40%);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
