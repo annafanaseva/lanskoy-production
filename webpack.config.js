@@ -56,12 +56,10 @@ module.exports = {
       template: './src/index.html'
     }),
     new HtmlWebpackPlugin({
-      title: 'Services',
       filename: 'services.html',
       template: './src/services.html'
     }),
     new HtmlWebpackPlugin({
-      title: 'About',
       filename: 'about.html',
       template: './src/about.html'
     }),
